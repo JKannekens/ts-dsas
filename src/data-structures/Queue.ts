@@ -1,3 +1,4 @@
+/** Class representing a Queue */
 export class Queue<T> {
   items: T[] = [];
 

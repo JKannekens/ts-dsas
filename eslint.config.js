@@ -22,7 +22,6 @@ export default [
           },
         },
       ],
-      "jsdoc/": "error",
       "no-unused-vars": "error",
     },
   },
