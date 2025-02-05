@@ -1,7 +1,16 @@
 {
-  "name": "typescript-data-structures",
+  "name": "ts-dsas",
   "module": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "version": "0.0.2",
+  "description": "A collection of data structures and algorithms implemented in TypeScript.",
+  "scripts": {
+    "build": "bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
+    "postbuild": "rimraf tsconfig.types.tsbuildinfo"
+  },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "@types/bun": "latest",
@@ -13,6 +22,23 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "eslint-plugin-jsdoc": "^50.6.0"
-  }
+    "eslint-plugin-jsdoc": "^50.6.0",
+    "rimraf": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JKannekens/ts-dsas"
+  },
+  "keywords": [
+    "data structures",
+    "algorithms",
+    "typescript",
+    "utils"
+  ],
+  "author": "Justin Kannekens",
+  "license": "MIT",
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ]
 }
