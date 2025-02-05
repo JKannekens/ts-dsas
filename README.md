@@ -1,4 +1,4 @@
-# ts-dsas (TypeScript Data Structures & Algorithms)
+# TypeScript Data Structures & Algorithms
 
 This project contains a collection of data structures implemented in TypeScript. It is designed to help developers understand and utilize common data structures in their TypeScript projects.
 
